@@ -1,0 +1,366 @@
+/***** BASE STYLES *****/
+body{
+  background-color: #FFFFFF;
+  font-family: 'Anton', sans-serif;
+  height: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: 'Helvetica';
+  font-size: 15px;
+}
+
+/***** GRID *****/
+
+.full-width {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.half-width {
+  float: left;
+  width: 50%;
+}
+
+.third-width {
+  float: left;
+  width: 33%;
+}
+
+
+.two-third-width {
+  float: left;
+  width: 66%;
+}
+
+.button {
+    background-color: #9D3A3B;
+    color: #FFFFFF;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    padding: 5px 20px 5px 20px;
+    text-transform: uppercase;
+}
+
+/***** HEADER *****/
+
+header {
+  height: 100px;
+  border: 0px;
+  border-bottom: solid 1px white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #9D3A3B;
+  position: sticky;
+  top: 0px;
+}
+
+header img {
+  padding: 15px 5px 0px 0px;;
+  margin: 0px;
+  float: left;
+}
+
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: calc(25px + 1vw);
+  float: left;
+  color: #FFFFFF;
+  margin-top: 22px;
+  letter-spacing: 2px;
+}
+
+nav {
+  float: right; /* to create a right aligned nav bar */
+}
+
+nav ul li {
+  display: inline-block;
+  padding-top: 15px;
+  margin: 0px;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: calc(15px + 0.5vw); /* making nav bar letters responsive */
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/***** WELCOME *****/
+
+#welcome {
+  padding: 0 0 0 20px;
+  border: 0px;
+  margin: 0px;
+  height: 900px;
+  top: 0px;
+  /* center = puts the image in the center, fixed = creates the effect of parralax */
+  background: url('../img/Backgroundpicture_landingPage.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;
+  background-size: cover;
+  min-height: 100%;
+  height: auto;
+}
+
+#welcome h2 {
+  font-size: 55px;
+  color: white;
+  padding-right: 20px;
+  letter-spacing: 2px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+#welcome p {
+  font-size: 25px;
+  padding-right: 20px;
+  padding-top: 400px;
+  color: white;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0px; /*removes white space between header and body */
+}
+
+
+
+/***** CONSTRUCTION SITE *****/
+
+#constructionsite .full-width {
+  padding: 100px 0px 100px 0px;
+  height: 230px;
+}
+
+#constructionsite h3 {
+  font-size: 20px;
+  padding-left: 20px;
+  font-family: 'Teko', sans-serif;
+}
+
+
+
+#constructionsite .description {
+  float: left;
+  padding-left: 20px;
+}
+
+#constructionsite img {
+  padding-right: 20px;
+}
+
+/***** UPCOMING *****/
+#upcoming .full-width {
+  background-color: #9D3A3B;
+  height: auto; /* allows that the section height auments depending on the amount of upcoming shows */
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 50px; /* to allow the page brease - more space */
+  padding-bottom: 50px;
+}
+
+
+/***** BIOGRAPHY *****/
+#biography {
+  background: url('../img/trigo_biography.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 150px 0 150px 0; /* allowing more space on the page */
+}
+
+#biography-text {
+  text-align: justify; /* Blocksatz */
+  width: 50%;
+  padding-left: 20px;
+}
+
+#biography-text p {
+  font-size: calc(16px + 0.2vw); /* scalable text with min font size of 16px) */
+}
+
+/***** CONNECT *****/
+#connect {
+  text-align: center;
+  border-top: solid 25px #9D3A3B;
+}
+
+#connect ul li {
+  display: inline-block;
+  margin-left: 15px;
+  padding: 0px;
+  border: 0px;
+}
+
+#connect ul li img {
+  width: 50px;
+}
+
+#connect ul {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+} /* needs to be set to 0px so that the icons are centralized */
+
+
+
+
+/***** DISCOGRAPHY *****/
+#discography {
+  padding: 0 15% 0 15%;
+} /* assures that the gallery has a responsive space from window border on left and right side */
+
+#discography h2 {
+  text-align: center;
+}
+
+#discography-item {
+  max-width: 900px;
+  list-style: none; /* so that there are no bullet points */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#discography-item li {
+  display: inline-block;
+  width: 30%; /* to set the width of each of the list element width */
+  vertical-align: middle;
+  margin: 0px;
+  padding-right: 10px; /* distance between gallery items */
+}
+
+.discography-cell {
+  display: block;
+  overflow: hidden;
+}
+
+.discography-cell img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+
+/* formatting caption */
+.discography-album {
+  display: block;
+  padding: 0 10px;
+  margin: 0px;
+  border: 0px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.discography-artist {
+  display: block;
+  padding: 0 10px;
+  margin: 0 0 10px 0;
+  border: 0px;
+  width: 100%;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* CONTACT PAGE */
+
+#contact h1 {
+  text-align: center;
+  margin: 50px 0 0 0;
+  letter-spacing: 2px;
+}
+
+#contact p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px 0 50px 0;
+  border: 0px;
+}
+
+#contact-form {
+  text-align:  center;
+  background: #9D3A3B;
+  margin-bottom: 50px;
+  height: 400px;
+}
+
+#contact-form h2 {
+    color: white;
+    border: 0px;
+    margin: 0px;
+    padding: 30px 0 0 0;
+    letter-spacing: 2px;
+}
+
+ #contact-form p {
+     color: white;
+     border: 0;
+     margin: 0;
+     padding-bottom: 20px;
+ }
+
+ #contact-form button {
+   border: 1px solid white;
+   background: #9D3A3B;
+   color: white;
+   padding: 5px 15px 5px 15px;
+   margin-top: 20px;
+   font-weight: 200;
+   font-family: sans-serif;
+ }
+
+ #contact-form input {
+   font-family: sans-serif;
+   border: 20px solid #9D3A3B;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   padding: 5px;
+ }
+
+
+
+/***** FOOTER *****/
+footer {
+  font-size: 16px;
+  text-align: center;
+  clear: both;
+  background-color: #9D3A3B;
+  color: #FFFFFF;
+  height: 250px;
+}
+
+footer h2 {
+  padding-top: 10px; /* to get a wider distance from the connect section */
+}
+
+footer .required_email {
+  font-family: sans-serif;
+}
+
+/* Mailchimp newsletter sign up */
+#mailchimp {
+  background-color: #9D3A3B;
+}
+
+form input {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #9D3A3B;
+}
+
+#copyright {
+  font-style: italic;
+  padding-top: 20px;
+}

@@ -125,11 +125,14 @@ nav ul li a {
 #projects {
   height: auto;
   float: left;
+  padding-bottom: 50px;
 }
 
 
 #projects h2 {
   text-align: center; /* to center the projects headline */
+  padding-top: 50px;
+
 }
 
 .project-divs {
@@ -148,15 +151,16 @@ nav ul li a {
 /**** ABOUT *****/
 
 #about {
-  background: transparent url('../img/about_me_background.png') no-repeat center top;
+  background: url('../img/about_me_background_white.png') no-repeat center top ;
   background-size: cover;
-  height: 300px;
+  height: 400px;
   clear: both; /* so that the background image appears in the correct section - needed due to float in projects section */
 }
 
 
 #about h2 {
-  text-align: center;
+  text-align: left;
+  padding-left: 50px;
 }
 
 #about-text {
@@ -166,7 +170,36 @@ nav ul li a {
 
 
 /***** CONTACT *****/
+#contact {
+  text-align: center;
+}
 
 #contact h2 {
   text-align: center;
+  padding-top: 50px;
+}
+
+#social-list ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+#social-list ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#contact img {
+  width: 50px;
+}
+
+
+/***** FOOTER *****/
+
+footer p {
+  text-align: center;
+  clear: both; /* needed due to the float in the contact section */
+  padding-top: 50px;
 }

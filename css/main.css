@@ -18,16 +18,20 @@ font-family: 'Abril Fatface', cursive;
 
 
 h1 {
-  font-family:
+  font-size: calc(20px + 1vw);
 }
 
 h2 {
-  text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: 2px;
+  font-size: calc(30px + 0.5vw);
 }
 
+h3 {
+  font-size: calc(20px + 0.5vw);
+}
 
+p {
+  font-size: calc(15px + 0.5vw);
+}
 
 /***** GRID *****/
 
@@ -64,7 +68,7 @@ header {
 }
 
 header img {
-  padding: 15px 5px 0px 0px;;
+  padding: 25px 5px 0px 0px;
   margin: 0px;
   float: left;
 }
@@ -72,8 +76,8 @@ header img {
 
 header h1 {
   text-transform: uppercase;
-  font-size: calc(20px + 1vw);
   margin-top: 22px;
+  padding-top: 15px;
 }
 
 nav {
@@ -99,9 +103,10 @@ nav ul li a {
 /***** HERO *****/
 
 #hero {
-  height: 100vh;
+  height: 90vh;
   /* center = puts the image in the center, fixed = creates the effect of parralax */
   background: url('../img/streetart-projects.jpg') no-repeat center center fixed;
+  border: 1px solid transparent;
 }
 
 #hero_logo {
@@ -111,16 +116,17 @@ nav ul li a {
 #hero-name {
   color: #952116;
   font-size: calc(110px + 1vw);
-  padding: 0 0 0 20px;
+  padding: 200px 0 0 30px;
   text-shadow: 4px 4px #B56D31;
 }
 
-/***** Projects *****/
+/***** PROJECTS *****/
 
 #projects {
   height: auto;
   float: left;
 }
+
 
 #projects h2 {
   text-align: center; /* to center the projects headline */
@@ -130,9 +136,37 @@ nav ul li a {
   height: 300px;
   padding: 0px 0px 0px 0px;
   margin: 10px 30px 10px 30px;
+  border: 1px solid transparent;
+  text-align: center;
 }
 
 .project-divs img {
   max-height: 100%; /* to fit the images to the size of the divs */
   max-width: 100%; /* to fit the images to the size of the divs */
+}
+
+/**** ABOUT *****/
+
+#about {
+  background: transparent url('../img/about_me_background.png') no-repeat center top;
+  background-size: cover;
+  height: 300px;
+  clear: both; /* so that the background image appears in the correct section - needed due to float in projects section */
+}
+
+
+#about h2 {
+  text-align: center;
+}
+
+#about-text {
+  width: 30vw;
+  margin-left: 50px;
+}
+
+
+/***** CONTACT *****/
+
+#contact h2 {
+  text-align: center;
 }

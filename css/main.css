@@ -141,21 +141,140 @@ nav ul li a {
   margin: 10px 30px 10px 30px;
   border: 1px solid transparent;
   text-align: center;
+  overflow: hidden;
 }
 
-/* make a irregular grid with photos --> within the div */ 
-.project-divs ul li {
-  display: inline-block;
-  float: left;
-  list-style: none;
-}
+
+
 
 .project-divs img {
   max-height: 100%; /* to fit the images to the size of the divs */
   max-width: 100%; /* to fit the images to the size of the divs */
-  width: 150px;
 }
 
+#image1 {
+  width: 150px;
+  height: 250px;
+  background: url('../img/streetart-projects.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+
+#image2 {
+  width: 200px;
+  height: 160px;
+  background: url('../img/fotos/Streetart2.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+  padding-top: 50px;
+}
+
+#image3 {
+  width: 100px;
+  height: 200px;
+  background: url('../img/fotos/Streetart3.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image4 {
+  height: 200px;
+  width: 100px;
+  background: url('../img/fotos/Streetart1.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image5 {
+  width: 250px;
+  height: 150px;
+  background: url('../img/landscape-projects.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+
+#image6 {
+  width: 200px;
+  height: 160px;
+  background: url('../img/fotos/landscape1.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+  padding-top: 50px;
+}
+
+#image7 {
+  width: 100px;
+  height: 200px;
+  background: url('../img/fotos/landscape2.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image8 {
+  height: 200px;
+  width: 100px;
+  background: url('../img/fotos/landscape3.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image9 {
+  height: 100px;
+  width: 100px;
+  background: url('../img/fotos/landscape4.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image10 {
+  height: 150px;
+  width: 100px;
+  background: url('../img/fotos/landscape5.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image11 {
+  height: 100px;
+  width: 100px;
+  background: url('../img/macros_structures.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image12 {
+  height: 150px;
+  width: 200px;
+  background: url('../img/fotos/macros1.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image13 {
+  height: 250px;
+  width: 100px;
+  background: url('../img/fotos/macros2.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image14 {
+  height: 200px;
+  width: 150px;
+  background: url('../img/fotos/macros3.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
+
+#image15 {
+  height: 150px;
+  width: 100px;
+  background: url('../img/fotos/macros4.jpg') no-repeat center center ;
+  background-size: cover;
+  float:left;
+}
 /**** ABOUT *****/
 
 #about {

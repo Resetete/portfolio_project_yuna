@@ -114,10 +114,10 @@ nav ul li a {
 }
 
 #hero-name {
-  color: #952116;
+  color: white;
   font-size: calc(110px + 1vw);
   padding: 200px 0 0 30px;
-  text-shadow: 4px 4px #B56D31;
+  text-shadow: 4px 4px #952116 ; /* #952116 #B56D31 */
 }
 
 /***** PROJECTS *****/
